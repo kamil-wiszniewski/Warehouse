@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Cynkomet - magazyn</title>
+  <meta name="description" content="A simple HTML5 Template for new projects.">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="obok_siebie2">
+  <form class="obok_siebie" method="POST" action='/wyszukaj_po_nazwisku'>
+    <button class="button-28" role="button">WYSZUKAJ PO NAZWISKU</button>
+  </form>
+
+  <form class="administracja" method="POST" action='/administracja'>
+    <button class="button-28" role="button">ADMINISTRACJA</button>
+  </form>
+</div>
+  <div class="h1">
+  <h1>ID PRACOWNIKA</h1>
+</div>
+
+  <div class="rfid">
+  <form method="POST" action='/wyszukaj_po_id'>
+    <input class="number" type="text" name="rfid_pracownika" required autofocus><br>
+    <button class="button-28" role="button">OK</button>
+  </form>
+</div>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

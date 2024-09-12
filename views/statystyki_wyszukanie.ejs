@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app3.css">
+  </head>
+  <body>
+
+    <h1> STATYSTYKI WYSZUKANIE </h1>
+
+    <table>
+  <tr>
+    <th>lp</th>
+    <th>rfid pracownika</th>
+    <th>nazwisko</th>
+    <th>imię</th>
+    <th>asortyment</th>
+    <th>data</th>
+  </tr>
+
+<% for(i = 0 ; i < result.length ; i++)  { %>
+<tr>
+    <td><%=i+1%></td>
+    <td><%=result[i]['rfid_pracownika']%></td>    
+    <td><%=result[i]['nazwisko']%></td>
+    <td><%=result[i]['imie']%></td>
+    <td><%=result[i]['nazwa']%></td>
+    <td><%=result[i]['data']%></td>
+  </tr>
+<% } %>
+</table>         
+  
+    <div class="button">
+    <form method="POST" action='/statystyki'><button class="button-28"> STATYSTYKI </button></form>
+    </div>
+
+  <script src="index.js"></script>
+  </body>
+</html>

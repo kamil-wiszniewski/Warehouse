@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app3.css">
+  </head>
+  <body>
+
+    <h1> DODANO PRACOWNIKA </h1>
+
+    <table class="tabela">
+      <tr>
+        <td class="td">Id:</th>
+        <th class="th"><%=result[0]['rfid_pracownika']%></th>
+      </tr>
+      <tr>
+        <td class="td">Imię:</th>
+        <th class="th"><%=result[0]['imie']%></th>
+      </tr>
+      <tr>
+        <td class="td">Nazwisko:</th>
+        <th class="th"> <%=result[0]['nazwisko']%></th>
+      </tr>
+      <tr>
+        <td class="td">Stanowisko:</th>
+        <th class="th"><%=result[0]['stanowisko']%></th>
+      </tr>
+      <tr>
+        <td class="td">Wydział:</th>
+        <th class="th"><%=result[0]['wydzial']%></th>
+      </tr>
+    </table>  
+
+    <div class="button">
+    <form method="POST" action='/administracja'><button class="button-28"> OK </button></form>
+    </div>
+
+    <div class="button">
+    <form method="POST" action='/dodawanie_pracownika'><button class="button-28"> DODAJ KOLEJNEGO </button> </form>
+    </div>
+
+    <div class="button">  
+    <form method="POST" action='/anuluj_dodanie'><button class="button-28"> ANULUJ TO DODANIE </button> </form>
+    </div>
+
+  <script src="index.js"></script>
+  </body>
+</html>

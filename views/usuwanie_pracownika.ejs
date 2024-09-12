@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app3.css">
+  </head>
+  <body>
+
+    <h1> USUWANIE PRACOWNIKA </h1>
+      
+    <form method="POST" action='/szukaj_usun'>
+      <p class="czarny">Wpisz Id pracownika</p>
+      <label>ID Pracownika: </label><input type="text" name="rfid_pracownika"> <br>
+      <p class="czarny">lub jego nazwisko (może być część)</p>
+      <label>Nazwisko: </label><input type="text" name="nazwisko"> <br>
+      <button class="button-28"> SZUKAJ </button> 
+    </form>    
+
+     <div class="button">
+    <form method="POST" action='/administracja'><button class="button-28"> ADMINISTRACJA </button></form>
+    </div>
+
+  <script src="index.js"></script>
+  </body>
+</html>

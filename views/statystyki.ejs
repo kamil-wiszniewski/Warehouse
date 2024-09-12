@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app3.css">
+  </head>
+  <body>
+
+    <h1> STATYSTYKI </h1>
+
+    <form method="POST" action='/statystyki_wyszukaj'>
+
+    <label>Pracownik: </label>
+    <select class="statystyki" name="pracownik">
+    <option>wszyscy pracownicy</option>
+<% for(var i=0; i < result.length; i++) { %>
+   <option><%= result[i].pracownik %></option>
+<% } %>    
+</select>
+    <br>
+
+<label>Asortyment: </label>
+<select class="statystyki" name="asortyment">
+    <option>wszystko</option>
+<% for(var i=0; i < resu.length; i++) { %>
+   <option><%= resu[i].nazwa %></option>
+<% } %>    
+</select>
+<br>
+
+<label>Od: </label>
+<input class="statystyki" type="date" name="od">
+<br>
+
+<label>Do:</label>
+<input class="statystyki" type="date" name="do">
+<br>
+
+<button class="button-28"> WYŚLIJ ZAPYTANIE </button>
+
+</form>
+
+<div class="button">
+    <form method="POST" action='/administracja'><button class="button-28"> ADMINISTRACJA </button></form>
+</div>
+
+  <script src="index.js"></script>
+  </body>
+</html>

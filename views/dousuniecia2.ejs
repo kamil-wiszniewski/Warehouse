@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app2.css">
+  </head>
+  <body>
+
+    <h1> WYNIK(I) WYSZUKANIA </h1>
+
+  <div class="wyniki">
+
+ <% for(i = 0 ; i < result.length ; i++)  { %>
+        <form method="POST" action='/wybierz2'>
+          <input type="hidden" name="rfid" value="<%=result[i]['rfid_pracownika']%>">
+          <button class="button-7"> WYBIERZ</button>
+          <p class="wybierz"><%=result[i]['nazwisko']%> <%=result[i]['imie']%>, Id pracownika: <%=result[i]['rfid_pracownika']%> </p>
+        </form>
+  <% } %>
+    
+   <form method="POST" action='/administracja'><button class="button-28"> ADMINISTRACJA </button></form>
+   
+  </div>
+
+	<script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,196 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    color:  white; 
+    background-color: #8C8C8C;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+    color: black;
+
+}
+
+p {
+    font-size: 20px;
+}
+
+label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+        margin-bottom: 12px;
+        margin-right: 10px;
+        font-size: 18px;
+}
+
+select { 
+    padding: 5px 5px; line-height: 25px; 
+     font-size:24px;
+     display: inline-block;
+        width: 300px;
+        
+}
+
+select.statystyki { 
+    padding: 5px 5px; line-height: 25px; 
+     font-size:14px;
+     display: inline-block;
+        width: 300px;
+        
+}
+
+.tabela {
+    font-size: 25px;
+}
+
+.td {
+    text-align: left;
+}
+
+.th {
+    text-align: left;
+}
+
+.ekran_glowny {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.czarny {
+    color: black;
+    font-weight: bold;
+}
+
+.srodek {
+    text-align: center;
+}
+
+div.rfid
+{
+    display: block;
+    text-align: center;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input[type="number"]{ 
+    padding: 5px 5px; line-height: 25px; 
+     font-size:24px;
+}
+
+input[type="text"]{ 
+    padding: 5px 5px; line-height: 25px; 
+     font-size:24px;
+}
+
+input[type="date"]{ 
+    padding: 5px 5px; line-height: 25px; 
+     font-size:24px;
+}
+
+input.statystyki[type="date"]{ 
+    padding: 3px 3px; line-height: 15px; 
+     font-size:14px;
+}
+
+.button-28 {
+  appearance: none;
+  background-color: #DA251D;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /*width: 120px;*/
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input#ilosc[type="number"]{ 
+    padding: 5px 5px; line-height: 18px; 
+     font-size:18px;
+     width: 50px;
+}
+
+label#ilosc{
+    width: 50px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input#ilosc::-webkit-outer-spin-button,
+input#ilosc::-webkit-inner-spin-button {
+  -webkit-appearance: auto;
+  margin: 0;
+}
+
+/* Firefox */
+input#ilosc[type=number] {
+  -moz-appearance: auto;
+}

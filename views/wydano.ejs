@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app3.css">
+  </head>
+  <body>
+
+    <h1> WYDANO ASORTYMENT </h1>
+
+    <table class="tabela">
+      <tr>
+        <td class="td">Wydano:</th>
+        <th class="th"> <%=result[0]['nazwa']%></th>
+      </tr>
+      <tr>
+        <td class="td">Pracownikowi:</th>
+        <th class="th"><%=result[0]['imie']%> <%=result[0]['nazwisko']%>, Id pracownika: <%=result[0]['rfid_pracownika']%></th>
+      </tr>
+      <tr>
+        <td class="td">Ilość:</th>
+        <th class="th"> <%=result[0]['ilosc']%></th>
+      </tr>
+    </table>
+
+    <div class="button">
+    <form method="POST" action='/wydaj_kolejna'>
+      <input type="hidden" name="rfid" value="<%=result[0]['rfid_pracownika']%>">
+      <button class="button-28">WYDAJ KOLEJNY </button> 
+    </form>
+  </div>
+    
+    <div class="button">
+    <form method="POST" action='/anuluj_wydanie'>
+      <input type="hidden" name="rfid" value="<%=result[0]['rfid_pracownika']%>">
+      <button class="button-28"> ANULUJ TO WYDANIE </button> 
+    </form>
+    </div>
+
+    <div class="button">
+    <form method="POST" action='/ekran_glowny'><button class="button-28"> EKRAN GŁÓWNY </button></form>
+   </div>
+
+  <script src="index.js"></script>
+  </body>
+</html>

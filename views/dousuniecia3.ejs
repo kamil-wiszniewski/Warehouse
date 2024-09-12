@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app3.css">
+  </head>
+  <body>
+
+    <h1> ASORTYMENT DO USUNIĘCIA</h1>
+
+    <table class="tabela">
+      <tr>
+        <td class="td">Kod asortymentu:</th>
+        <th class="th"><%=result[0]['kod_kreskowy']%></th>
+      </tr>
+      <tr>
+        <td class="td">Nazwa:</th>
+        <th class="th"><%=result[0]['nazwa']%></th>
+      </tr>
+    </table>    
+
+    <div class="button">
+    <form method="POST" action='/usun_asortyment2'>
+      <input type="hidden" name="kod" value="<%=result[0]['kod_kreskowy']%>">
+      <button class="button-28"> USUŃ TEN ASORTYMENT </button> 
+    </form>
+    </div>
+
+    <div class="button">
+    <form method="POST" action='/usun_asortyment'><button class="button-28"> ANULUJ </button></form>
+    </div>
+
+  <script src="index.js"></script>
+  </body>
+</html>

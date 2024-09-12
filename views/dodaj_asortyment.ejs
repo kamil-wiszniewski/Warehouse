@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cynkomet - magazyn</title>
+    <link rel="stylesheet" href="/app3.css">
+  </head>
+  <body>
+
+    <h1> DODAWANIE ASORTYMENTU </h1>  
+    
+    <form method="POST" action='/dodaj_asortyment2'>
+
+      <label>Kod asortymentu: </label><input type="text" name="kod_kreskowy" required> <br>
+      <label>Nazwa asortymentu: </label><input type="text" name="nazwa" autofocus required> <br>      
+      
+      <button class="button-28" > DODAJ </button> 
+  </form>
+    
+    <div class="button">
+      <form method="POST" action='/administracja'><button class="button-28"> ADMINISTRACJA </button></form>
+    </div> 
+    
+  <script src="index.js"></script>
+  </body>
+</html>

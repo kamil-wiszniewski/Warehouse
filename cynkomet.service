@@ -1,0 +1,11 @@
+[Unit]
+Description=LTPS NodeJS Test Application
+After=network-online.target
+
+[Service]
+Restart=on-failure
+WorkingDirectory=/var/www/html/magazyn/
+ExecStart=/usr/bin/nodejs /var/www/html/magazyn/cynkomet.js
+
+[Install]
+WantedBy=multi-user.target
