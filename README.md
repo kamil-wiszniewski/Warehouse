@@ -6,3 +6,7 @@ Material flow management app with statistical module for an in-plant warehouse
 - Integrated a tool management module with statistical reporting, providing real-time insights into tool usage within the warehouse.
 
 Technologies used: SQL, Node.js, html, css, Java Script
+
+![Screen1](images/2.png)
+
+More screenshots: [images](images/)
